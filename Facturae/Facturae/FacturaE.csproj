@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>Exe</OutputType>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -19,10 +19,11 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <StartupObject>FacturaE.Program</StartupObject>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
